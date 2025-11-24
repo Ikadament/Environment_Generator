@@ -1,5 +1,5 @@
 # EnviroArtProject 
-EnviroArtProject is a C# ASP.NET Core MVC web application designed to generate environment ideas for artists, game designers, worldbuilders, and anyone seeking inspiration.
+EnviroArtProject is a C# ASP.NET MVC web application designed to generate environment ideas for artists, game designers, worldbuilders, and anyone seeking inspiration.
 
 ---
 
