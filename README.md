@@ -21,7 +21,7 @@ WIP: @Ikadam
 ---
 
 ## Technologies
-- Frontend: Razor Views (.cshtml), HTML5, CSS3 (Grid/Flex)
+- Frontend: Razor Views (.cshtml), HTML5, CSS
 - Backend:	ASP.NET Core MVC
-- Language:	C# (.NET 7)
+- Language:	C# (.NET 8)
 - Tools:	Visual Studio Code, ThunderClient.
