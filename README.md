@@ -14,7 +14,7 @@ The app fetches three types of data from external sources, such as APIs:
 - for words: https://random-word-api.vercel.app/api?words=2&type=capitalized
 
 <img width="981" height="636" alt="EnviroArtGenerator1" src="https://github.com/user-attachments/assets/0e7e5a05-4cd9-48bb-8797-d41727fa4979" />
-<img width="2048" height="2048" alt="EnviroArt1" src="https://github.com/user-attachments/assets/20aff368-0911-47ea-a12a-fb84136d0761" />
+<img width="600" height="600" alt="EnviroArt1" src="https://github.com/user-attachments/assets/20aff368-0911-47ea-a12a-fb84136d0761" />
 @Ikadam
 
 
