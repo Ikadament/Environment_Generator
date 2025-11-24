@@ -1,0 +1,115 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title-contain {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.generator-contain {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  grid-template-columns: repeat(6, 100px) ;
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+  width: max-content;
+  margin: 20px auto;
+}
+
+.box {
+  border: 4px solid black;
+  background: white;
+}
+
+.box.generate {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+
+  border: 5.5px solid black;
+  cursor: pointer;
+}
+
+.button-generate, .word {
+  font-size: 1.6rem;
+  font-weight:bold;
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-generate:hover {
+  opacity: 50%;
+}
+
+.word {
+  font-size: 1.3rem;
+}
+
+.box.left.top {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+.box.left.bottom {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.box.middle {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.box.right {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 3;
+
+  border: 2px solid black;
+}
+
+.enviro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.enviro-palette {
+  flex: 1;
+   width: 100%;
+}
+

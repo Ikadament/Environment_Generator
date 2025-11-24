@@ -1,0 +1,74 @@
+@model EnviroArtProject.Models.WorldIdea
+
+@{
+    ViewData["Title"] = "EnviroIndex";
+}
+
+<body>
+
+    <main>
+
+        <div class="title-contain">
+            <h1>
+                Environment Idea Generator
+            </h1>
+        </div>
+        
+        <div class="generator-contain">
+
+            <form method="post" asp-action="GenerateEnviroIdea" class="box generate">
+                <button type="submit" class="button-generate">GENERATE</button>
+            </form>
+
+            <!-- first word -->
+
+            <div class="box left top">
+                @if (Model.WordsInfos?.WordArray != null)
+                    {
+                        string[] words = Model.WordsInfos.WordArray;
+                        <p class="word">@words[0]</p>
+                    }
+            </div>
+
+            <!-- second word -->
+
+            <div class="box left bottom">
+                @if (Model.WordsInfos?.WordArray != null)
+                    {
+                        string[] words = Model.WordsInfos.WordArray;
+                        <p class="word">@words[1]</p>
+                    }
+            </div>
+
+            <!-- color palette -->
+
+            <div class="box middle">
+                @if (Model.Colors?.Palette != null)
+                    {
+                        foreach (var color in Model.Colors.Palette)
+                        {
+                            var rgb = $"rgb({color[0]}, {color[1]}, {color[2]})";
+
+                            <div class ="enviro-palette" style="background-color:@rgb;"></div>
+                        }
+                    }
+            </div>
+
+            <!-- image -->
+
+            <div class="box right">
+                @if (!string.IsNullOrEmpty(Model.WorldLocation.Url))
+                    {
+                        <img class="enviro-image" src="@Model.WorldLocation.Url" alt="" />
+                    }
+            </div>
+        </div>
+    </main>
+</body>
+
+
+
+
+
+
+
